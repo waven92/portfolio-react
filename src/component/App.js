@@ -3,7 +3,7 @@ import home from './page/home'; //作成したpage1.jsを読み込んでいる
 import about from './page/about';
 import skills from './page/skills';
 import works from './page/works';
-import '../App.css';
+import '../css/portfolio.css';
 
 function App() {
   return (

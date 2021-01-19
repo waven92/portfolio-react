@@ -4,14 +4,20 @@ import { Link } from 'react-router-dom';// 追加 Linkタブを読み込む
 class home extends React.Component {
     render() {
         return (
-            <article>
-                <h1>Portfolio</h1>
-                <Link to={`/about`}>Go To ABOUT</Link> 
-                <br/>
-                <Link to={`/skills`}>Go To SKILLS</Link> 
-                <br/>
-                <Link to={`/works`}>Go To WORKS</Link> 
-            </article>
+            <section>
+                <h1 className="title">Portfolio</h1>
+                <ul className="ContentsList">
+                    <li className="ContentsItem">
+                        <Link to={`/about`} className="ContentsItemLink">Go To ABOUT</Link> 
+                    </li>
+                    <li className="ContentsItem">
+                        <Link to={`/skills`} className="ContentsItemLink">Go To SKILLS</Link>
+                    </li>
+                    <li className="ContentsItem">
+                        <Link to={`/works`} className="ContentsItemLink">Go To WORKS</Link>
+                    </li>
+                </ul>
+            </section>
         );
     }
 }
