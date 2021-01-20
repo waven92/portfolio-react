@@ -15,6 +15,20 @@ class page2 extends React.Component {
                 <Link to={`/`}>HOMEに戻る</Link>
                 <h1 className="title">SKILLS</h1>
                 <div className="skill_wrap">
+                    <p className="skill_title">強み</p>
+                    <ul>
+                        <li>
+                            細かい作業が好きで、デザインそっくりにコーディングすることができます。
+                        </li>
+                        <li>
+                            HTMLをセマンティックにマークアップすることができます。
+                        </li>
+                        <li>
+                            正しい文書構造で適したタグを使用してマークアップすることを心がけています。
+                        </li>
+                    </ul>
+                </div>
+                <div className="skill_wrap">
                     <p className="skill_title">これまでに身に着けたスキル</p>
                     <ul className="skill_list">
                         <li>

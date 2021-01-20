@@ -8,7 +8,9 @@ class home extends React.Component {
                 <h1 className="title">Portfolio</h1>
                 <ul className="ContentsList">
                     <li className="ContentsItem">
-                        <Link to={`/about`} className="ContentsItemLink">Go To ABOUT</Link> 
+                        <Link to={`/about`} className="ContentsItemLink">
+                            ABOUT<br/>これまでの経歴について
+                        </Link> 
                     </li>
                     <li className="ContentsItem">
                         <Link to={`/skills`} className="ContentsItemLink">Go To SKILLS</Link>
