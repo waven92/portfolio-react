@@ -1,36 +1,41 @@
-import React from 'react';              //Reactを読み込んでいる
+import React from 'react';
 import { Link } from 'react-router-dom';
+import icon_other from '../../img/icon_other.png';
 
-class page2 extends React.Component {   //page2クラスにReact.Componentを継承する
+class page2 extends React.Component {
  
     render() {
         return (
-            <section>
-                <Link to={`/`}>HOMEに戻る</Link>
-                <h1 className="title">WORKS</h1>
-                <div className="skill_wrap">
-                    <p className="skill_title">製作物</p>
-                    <ul className="skill_list">
+            <article>
+                <h1 className="p-title"><Link to={`/`}>Portfolio</Link></h1>
+                <section>
+                <h2 className="p-sub_title">WORK</h2>
+                    <div className="p-contents_area">
+                        <div className="work_wrap">
+                            <img src={icon_other} width="100" alt="その他"/>
+                            <div className="work_right">
+                                <p className="work_title">映画検索アプリ</p>
+                                <p className="work_description">React Hooks+Redukでチュートリアルを元に作成しました</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="p-contents_area">
+                        <img src={icon_other} width="100" alt="その他"/>
+                        <p className="skill_title">製作物</p>
+                    </div>
+                    <ul className="p-contents_nav">
                         <li>
-                            <p>HTML</p>
-                            <p className="skill_detail">正しい文書構造で適したタグを使用してマークアップすることを心がけています。</p>
+                            <Link to={`/about`} className="p-contents_nav_link">
+                                ABOUT<br/>これまでの経歴について
+                            </Link> 
                         </li>
                         <li>
-                            <p>CSS</p>
-                            <p className="skill_detail">パフォーマンスの観点から、簡単なアイコンや動きなど、CSSでコーディング可能な個所はできるだけ画像やJavaScriptに頼らないように努めています。</p>
+                            <Link to={`/skills`} className="p-contents_nav_link">Go To SKILLS</Link>
                         </li>
                     </ul>
-                </div>
-                <ul className="ContentsList">
-                    <li className="ContentsItem">
-                        <Link to={`/about`} className="ContentsItemLink">Go To ABOUT</Link> 
-                    </li>
-                    <li className="ContentsItem">
-                        <Link to={`/skills`} className="ContentsItemLink">Go To SKILLS</Link>
-                    </li>
-                </ul>
-                <Link to={`/`}>HOMEに戻る</Link>
-            </section>
+                    <Link to={`/`}>HOMEに戻る</Link>
+                </section>
+            </article>
         );
     }
 }
