@@ -1,5 +1,5 @@
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
-import home from './page/home'; //作成したpage1.jsを読み込んでいる
+import home from './page/home';
 import about from './page/about';
 import skills from './page/skills';
 import works from './page/works';

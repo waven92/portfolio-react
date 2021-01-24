@@ -1,12 +1,14 @@
+
 article {
   min-height: 100vh;
-  background-color: #EFEFEF;
+  background-color: #f9f7f7;
   text-align: center;
+  font-family: 'Montserrat', sans-serif;
 }
 .p-title {
   margin: 0;
   padding: 7px 0;
-  background-color: #222;
+  background-color: #0058a0;
   box-shadow: 0 1px 8px 0 rgba(0,0,0,0.6);
   position: fixed;
   width: 100%;
@@ -49,39 +51,68 @@ section {
   background-color: #fff;
   border-radius: 5px;
   &:hover {
-    color: rgba(34, 34, 34, .5);
+    color: rgba(34, 34, 34, .7);
     box-shadow: 0 0 8px 0 rgba(0, 0, 0, .15);
   }
 }
 
 .p-contents_area {
   width: unquote("min(94%, 1000px)");
-  margin: auto;
+  margin: 0 auto 70px;
   box-shadow: 0 0 8px 0 rgba(0, 0, 0, .15);
   border-radius: 5px;
   background-color: #fff;
-  margin-bottom: 70px;
-}
-
-
-// about
-.about_contents {
-  width: unquote("min(94%, 500px)");
-  margin: 0 auto 60px;
-  list-style: none;
-  padding: 0;
-  li {
-    color: rgb(34, 34, 34);
-    background-color: #fff;
-    border-radius: 5px;
-    box-shadow: 0 0 8px 0 rgba(0, 0, 0, .15);
-    padding: 15px;
-    &+li {
+  box-sizing: border-box;
+  &.about {
+    padding: 4%;
+    text-align: left;
+  }
+  &.work {
+    width: unquote("min(48%, 480px)");
+    margin: 0;
+    padding: 20px;
+    @media screen and (max-width: 414px) {
+      width:100%;
+    }
+    &+.work {
       margin-top: 20px;
     }
   }
 }
 
+// home
+.home_description {
+  margin: 60px 0 40px;
+}
+
+// about
+.about_title {
+  font-weight: bold;
+  font-size: 19px;
+  margin: 0 0 7px;
+}
+.about_description {
+  margin: 0;
+}
+.about_note {
+  overflow-x: auto;
+  white-space: nowrap;
+  margin: 0;
+  font-size: 13px;
+  display: block;
+  span {
+    text-decoration: underline;
+  }
+}
+.about_note_title {
+  font-size: 14px;
+  display: block;
+}
+hr {
+  margin: 35px 0;
+  border-top: 1px solid #eee;
+  border-width: 1px 0 0 0;
+}
 
  // skill
 .skill_title {
@@ -109,6 +140,7 @@ section {
   margin: 0 auto 40px;
   font-size: 15px;
   color: rgb(34, 34, 34);
+  text-align: left;
 
 }
 // 強み
@@ -125,6 +157,17 @@ section {
 
 
 // work
-.work_wrap {
+.work_contents_wrap {
   display: flex;
+  width: unquote("min(94%, 1000px)");
+  margin: 0 auto 70px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.work_title {
+  text-align: left;
+  font-weight: bold;
+}
+.work_description {
+  text-align: left;
 }

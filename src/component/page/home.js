@@ -7,11 +7,11 @@ class home extends React.Component {
             <article>
                 <h1 className="p-title"><Link to={`/`}>Portfolio</Link></h1>
                 <section>
-                    <p>フロントエンドの開発をしています。</p>
+                    <p className="home_description">フロントエンドの開発をしています。</p>
                     <ul className="p-contents_nav">
                         <li>
                             <Link to={`/about`} className="p-contents_nav_link">
-                                ABOUT<br/>これまでの経歴について
+                                ABOUT<br/>経歴を見る
                             </Link> 
                         </li>
                         <li>

@@ -7,7 +7,7 @@ import icon_java from '../../img/icon_java.png';
 import icon_googlebot from '../../img/icon_googlebot.png';
 import icon_other from '../../img/icon_other.png';
 
-class page2 extends React.Component {
+class Skills extends React.Component {
 
     render() {
         return (
@@ -19,7 +19,7 @@ class page2 extends React.Component {
                         <p className="skill_title">強み</p>
                         <ul className="strong_point">
                             <li>
-                                細かい作業が好きで、デザインそっくりにHTML/CSSコーディングすることができます。
+                                細かい作業が得意で、デザインそっくりにコーディングすることができます。
                             </li>
                             <li>
                                 HTMLをセマンティックにマークアップすることができます。
@@ -40,12 +40,12 @@ class page2 extends React.Component {
                             <li>
                                 <img src={icon_css3} width="100" alt="css3"/>
                                 <p>CSS3, Sass</p>
-                                <p className="skill_detail">パフォーマンスの観点から、簡単なアイコンや動きなど、CSSでコーディング可能な個所はできるだけ画像やJavaScriptに頼らないように努めています。</p>
+                                <p className="skill_detail">パフォーマンスの観点から、簡単なアイコンや動きなどは可能な限りCSSでコーディングするようにしています。</p>
                             </li>
                             <li>
                                 <img src={icon_javascript} width="100" alt="javascript"/>
                                 <p>JavaScript</p>
-                                <p className="skill_detail">イベント処理やAPI通信など基本的なことは実装できます。</p>
+                                <p className="skill_detail">イベント処理やAPI通信などのコーディングができます。最近はReactを学習中です。</p>
                             </li>
                             <li>
                                 <img src={icon_java} width="100" alt="java"/>
@@ -55,7 +55,7 @@ class page2 extends React.Component {
                             <li>
                                 <img src={icon_googlebot} width="100" alt="googlebot"/>
                                 <p>SEO</p>
-                                <p className="skill_detail">構造化データの埋め込み、MFI対応、クローラビリティの最適化などを行い、SEOの順位を上げる取り組みをしていました。</p>
+                                <p className="skill_detail">構造化データの埋め込み、MFI対応、クローラビリティの最適化などを行い、サイトのSEO評価を上げる取り組みをしていました。</p>
                             </li>
                             <li>
                                 <img src={icon_other} width="100" alt="その他"/>
@@ -81,4 +81,4 @@ class page2 extends React.Component {
     }
 }
 
-export default page2; 
+export default Skills; 
