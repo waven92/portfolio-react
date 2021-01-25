@@ -22,10 +22,10 @@ class Skills extends React.Component {
                                 細かい作業が得意で、デザインそっくりにコーディングすることができます。
                             </li>
                             <li>
-                                HTMLをセマンティックにマークアップすることができます。
+                                観察力がありレビュー中に細かいコーディングミスを見つけることができます。(よく褒められます)
                             </li>
                             <li>
-                                正しい文書構造で適したタグを使用してマークアップすることを心がけています。
+                                パフォーマンスを意識したコーディングができます。
                             </li>
                         </ul>
                     </div>
@@ -34,12 +34,12 @@ class Skills extends React.Component {
                         <ul className="skill_list">
                             <li>
                                 <img src={icon_html5} width="100" alt="html5"/>
-                                <p>HTML5</p>
-                                <p className="skill_detail">セマンティックなコーディングを心がけています。</p>
+                                <p>HTML</p>
+                                <p className="skill_detail">セマンティックにマークアップすることができます。</p>
                             </li>
                             <li>
                                 <img src={icon_css3} width="100" alt="css3"/>
-                                <p>CSS3, Sass</p>
+                                <p>CSS, Sass</p>
                                 <p className="skill_detail">パフォーマンスの観点から、簡単なアイコンや動きなどは可能な限りCSSでコーディングするようにしています。</p>
                             </li>
                             <li>
@@ -50,12 +50,12 @@ class Skills extends React.Component {
                             <li>
                                 <img src={icon_java} width="100" alt="java"/>
                                 <p>Java</p>
-                                <p className="skill_detail">金融系iOSアプリ(swift + Java)のサーバーサイドを担当し、API開発などをしていました。</p>
+                                <p className="skill_detail">前職では金融系iOSアプリ(swift + Java)のサーバーサイドを担当し、API開発などをしていました。</p>
                             </li>
                             <li>
                                 <img src={icon_googlebot} width="100" alt="googlebot"/>
                                 <p>SEO</p>
-                                <p className="skill_detail">構造化データの埋め込み、MFI対応、クローラビリティの最適化などを行い、サイトのSEO評価を上げる取り組みをしていました。</p>
+                                <p className="skill_detail">構造化データの埋め込み、MFI対応、クローラビリティの改善などを行い、サイトのSEO評価を上げる取り組みをしていました。</p>
                             </li>
                             <li>
                                 <img src={icon_other} width="100" alt="その他"/>
@@ -74,7 +74,7 @@ class Skills extends React.Component {
                             <Link to={`/works`} className="p-contents_nav_link">Go To WORKS</Link>
                         </li>
                     </ul>
-                    <Link to={`/`}>HOMEに戻る</Link>
+                    <Link to={`/`} className="p-contents_nav_nome">HOME</Link>
                 </section>
             </article>
         );

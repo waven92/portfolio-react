@@ -55,6 +55,22 @@ section {
     box-shadow: 0 0 8px 0 rgba(0, 0, 0, .15);
   }
 }
+.p-contents_nav_nome {
+  border: 1px solid #4dbf80;
+  display: block;
+  width: 115px;
+  padding: 10px 0;
+  color: #fff;
+  background-color: #4dbf80;
+  text-decoration: none;
+  margin: 20px auto 0;
+  font-weight: bold;
+  border-radius: 5px;
+  &:hover {
+    box-shadow: 0 0 8px 0 rgba(0, 0, 0, .15);
+    background-color: rgba(77, 191, 128, .9);
+  }
+}
 
 .p-contents_area {
   width: unquote("min(94%, 1000px)");
@@ -73,9 +89,9 @@ section {
     padding: 20px;
     @media screen and (max-width: 414px) {
       width:100%;
-    }
-    &+.work {
-      margin-top: 20px;
+      &+.work {
+        margin-top: 20px;
+      }
     }
   }
 }

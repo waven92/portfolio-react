@@ -15,10 +15,10 @@ class home extends React.Component {
                             </Link> 
                         </li>
                         <li>
-                            <Link to={`/skills`} className="p-contents_nav_link">Go To SKILLS</Link>
+                            <Link to={`/skills`} className="p-contents_nav_link">SKILLS<br/>強み・スキルを見る</Link>
                         </li>
                         <li>
-                            <Link to={`/works`} className="p-contents_nav_link">Go To WORKS</Link>
+                            <Link to={`/works`} className="p-contents_nav_link">WORKS<br/>制作物を見る</Link>
                         </li>
                     </ul>
                 </section>

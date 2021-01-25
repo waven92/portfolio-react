@@ -10,7 +10,6 @@ class Works extends React.Component {
                 <h1 className="p-title"><Link to={`/`}>Portfolio</Link></h1>
                 <section>
                 <h2 className="p-sub_title">WORK</h2>
-                <p>個人で制作したものになります。</p>
                     <div className="work_contents_wrap">
                         <div className="p-contents_area work">
                             <img src={icon_other} width="250" height="200" alt="その他"/>
@@ -21,7 +20,7 @@ class Works extends React.Component {
                         <div className="p-contents_area work">
                             <img src={icon_other} width="250" height="200" alt="その他"/>
                             <p className="work_title">ポートフォリオサイト</p>
-                            <p className="work_description">当サイトです。SPAで作成しました。見やすさにこだわりました。</p>
+                            <p className="work_description">SPAで構成しています。コンテンツの下に別コンテンツのナビゲーションを設置するなど、見やすさ・使いやすさにこだわりました。また、スマホ画面も対応しています。</p>
                             <p className="work_description">技術・サービス：<br/>React, create-react-app, react-router-dom, Sass, gulp</p>
                         </div>
                     </div>
@@ -35,7 +34,7 @@ class Works extends React.Component {
                             <Link to={`/skills`} className="p-contents_nav_link">Go To SKILLS</Link>
                         </li>
                     </ul>
-                    <Link to={`/`}>HOMEに戻る</Link>
+                    <Link to={`/`} className="p-contents_nav_nome">HOME</Link>
                 </section>
             </article>
         );
