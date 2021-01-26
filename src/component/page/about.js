@@ -1,5 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import skill from '../../img/skill.png';
+import work from '../../img/work.png';
 
 class About extends React.Component {
  
@@ -9,7 +11,7 @@ class About extends React.Component {
                 <h1 className="p-title"><Link to={`/`}>Portfolio</Link></h1>
                 <section>
                     <h2 className="p-sub_title">ABOUT</h2>
-                    <div className="p-contents_area about">
+                    <div className="l-contents_area about c-contents_area">
                         <div>
                             <p className="about_title">愛媛大学農学部 生物資源学科</p>
                             <p className="about_description">動物細胞工学研究室で食品免疫学について研究。
@@ -30,10 +32,16 @@ class About extends React.Component {
                     </div>
                     <ul className="p-contents_nav">
                         <li>
-                            <Link to={`/skills`} className="p-contents_nav_link">Go To SKILLS</Link>
+                            <Link to={`/skills`} className="p-contents_nav_link">
+                                <img src={skill} width="150" alt="skills"/>
+                                <p>SKILLS<br/>強み・スキルを見る</p>
+                            </Link>
                         </li>
                         <li>
-                            <Link to={`/works`} className="p-contents_nav_link">Go To WORKS</Link>
+                            <Link to={`/works`} className="p-contents_nav_link">
+                                <img src={work} width="150" alt="works"/>
+                                <p>WORKS<br/>制作物を見る</p>
+                            </Link>
                         </li>
                     </ul>
                     <Link to={`/`} className="p-contents_nav_nome">HOME</Link>

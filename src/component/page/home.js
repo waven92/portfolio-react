@@ -1,5 +1,8 @@
-import React from 'react';              //Reactを読み込んでいる
-import { Link } from 'react-router-dom';// 追加 Linkタブを読み込む
+import React from 'react';
+import { Link } from 'react-router-dom';
+import about from '../../img/about.png';
+import skill from '../../img/skill.png';
+import work from '../../img/work.png';
  
 class home extends React.Component {
     render() {
@@ -11,14 +14,21 @@ class home extends React.Component {
                     <ul className="p-contents_nav">
                         <li>
                             <Link to={`/about`} className="p-contents_nav_link">
-                                ABOUT<br/>経歴を見る
+                                <img src={about} width="150" alt="html5"/>
+                                <p>ABOUT<br/>経歴を見る</p>
                             </Link> 
                         </li>
                         <li>
-                            <Link to={`/skills`} className="p-contents_nav_link">SKILLS<br/>強み・スキルを見る</Link>
+                            <Link to={`/skills`} className="p-contents_nav_link">
+                                <img src={skill} width="150" alt="skills"/>
+                                <p>SKILLS<br/>強み・スキルを見る</p>
+                            </Link>
                         </li>
                         <li>
-                            <Link to={`/works`} className="p-contents_nav_link">WORKS<br/>制作物を見る</Link>
+                            <Link to={`/works`} className="p-contents_nav_link">
+                                <img src={work} width="150" alt="works"/>
+                                <p>WORKS<br/>制作物を見る</p>
+                            </Link>
                         </li>
                     </ul>
                 </section>

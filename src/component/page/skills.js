@@ -6,6 +6,8 @@ import icon_javascript from '../../img/icon_javascript.png';
 import icon_java from '../../img/icon_java.png';
 import icon_googlebot from '../../img/icon_googlebot.png';
 import icon_other from '../../img/icon_other.png';
+import about from '../../img/about.png';
+import work from '../../img/work.png';
 
 class Skills extends React.Component {
 
@@ -15,7 +17,7 @@ class Skills extends React.Component {
                 <h1 className="p-title"><Link to={`/`}>Portfolio</Link></h1>
                 <section>
                     <h2 className="p-sub_title">SKILLS</h2>
-                    <div className="p-contents_area">
+                    <div className="l-contents_area c-contents_area">
                         <p className="skill_title">強み</p>
                         <ul className="strong_point">
                             <li>
@@ -29,7 +31,7 @@ class Skills extends React.Component {
                             </li>
                         </ul>
                     </div>
-                    <div className="p-contents_area">
+                    <div className="l-contents_area c-contents_area">
                         <p className="skill_title">これまでに身に着けたスキル</p>
                         <ul className="skill_list">
                             <li>
@@ -66,12 +68,16 @@ class Skills extends React.Component {
                     </div>
                     <ul className="p-contents_nav">
                         <li>
-                            <Link to={`/about`} className="p-contents_nav_link">
-                                ABOUT<br/>これまでの経歴について
-                            </Link> 
+                            <Link to={`/works`} className="p-contents_nav_link">
+                                <img src={work} width="150" alt="works"/>
+                                <p>WORKS<br/>制作物を見る</p>
+                            </Link>
                         </li>
                         <li>
-                            <Link to={`/works`} className="p-contents_nav_link">Go To WORKS</Link>
+                            <Link to={`/about`} className="p-contents_nav_link">
+                                <img src={about} width="150" alt="html5"/>
+                                <p>ABOUT<br/>経歴を見る</p>
+                            </Link> 
                         </li>
                     </ul>
                     <Link to={`/`} className="p-contents_nav_nome">HOME</Link>

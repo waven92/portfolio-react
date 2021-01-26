@@ -1,6 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import icon_other from '../../img/icon_other.png';
+import about from '../../img/about.png';
+import skill from '../../img/skill.png';
 
 class Works extends React.Component {
  
@@ -11,27 +13,31 @@ class Works extends React.Component {
                 <section>
                 <h2 className="p-sub_title">WORK</h2>
                     <div className="work_contents_wrap">
-                        <div className="p-contents_area work">
+                        <div className="l-contents_area work c-contents_area">
                             <img src={icon_other} width="250" height="200" alt="その他"/>
                             <p className="work_title">映画検索アプリ</p>
                             <p className="work_description">Reactコンポーネントや外部API、フック使い作成しました。</p>
                             <p className="work_description">技術・サービス：<br/>React, Hooks, create-react-app, CSS</p>
                         </div>
-                        <div className="p-contents_area work">
+                        <div className="l-contents_area work c-contents_area">
                             <img src={icon_other} width="250" height="200" alt="その他"/>
                             <p className="work_title">ポートフォリオサイト</p>
-                            <p className="work_description">SPAで構成しています。コンテンツの下に別コンテンツのナビゲーションを設置するなど、見やすさ・使いやすさにこだわりました。また、スマホ画面も対応しています。</p>
+                            <p className="work_description">SPAで構成しています。コンテンツの下に別コンテンツのナビゲーションを設置するなど、見やすさ・使いやすさにこだわりました。また、スマホ画面にも対応しています。</p>
                             <p className="work_description">技術・サービス：<br/>React, create-react-app, react-router-dom, Sass, gulp</p>
                         </div>
                     </div>
                     <ul className="p-contents_nav">
                         <li>
                             <Link to={`/about`} className="p-contents_nav_link">
-                                ABOUT<br/>これまでの経歴について
+                                <img src={about} width="150" alt="html5"/>
+                                <p>ABOUT<br/>経歴を見る</p>
                             </Link> 
                         </li>
                         <li>
-                            <Link to={`/skills`} className="p-contents_nav_link">Go To SKILLS</Link>
+                            <Link to={`/skills`} className="p-contents_nav_link">
+                                <img src={skill} width="150" alt="skills"/>
+                                <p>SKILLS<br/>強み・スキルを見る</p>
+                            </Link>
                         </li>
                     </ul>
                     <Link to={`/`} className="p-contents_nav_nome">HOME</Link>

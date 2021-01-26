@@ -1,3 +1,29 @@
+// コンテンツエリアのスタイル
+.c-contents_area {
+  box-shadow: 0 0 8px 0 rgba(0, 0, 0, .15);
+  border-radius: 5px;
+  background-color: #fff;
+}
+.l-contents_area {
+  width: unquote("min(94%, 1000px)");
+  margin: 0 auto 70px;
+  box-sizing: border-box;
+  &.about {
+    padding: 4%;
+    text-align: left;
+  }
+  &.work {
+    width: unquote("min(48%, 480px)");
+    margin: 0;
+    padding: 20px;
+    @media screen and (max-width: 414px) {
+      width:100%;
+      &+.work {
+        margin-top: 20px;
+      }
+    }
+  }
+}
 
 article {
   min-height: 100vh;
@@ -8,7 +34,7 @@ article {
 .p-title {
   margin: 0;
   padding: 7px 0;
-  background-color: #0058a0;
+  background-color: #000;
   box-shadow: 0 1px 8px 0 rgba(0,0,0,0.6);
   position: fixed;
   width: 100%;
@@ -18,7 +44,7 @@ article {
   text-align: center;
   a {
     color: #fff;
-    font-size: 32px;
+    font-size: 28px;
     text-decoration: none;
   }
 }
@@ -42,17 +68,26 @@ section {
   }
 }
 .p-contents_nav_link {
-  display: block;
   text-decoration: none;
   line-height: 26px;
-  padding: 25px 0;
+  padding: 11px 0;
   color: rgb(34, 34, 34);
   transition: all .1s linear;
   background-color: #fff;
-  border-radius: 5px;
+  border-radius: 90px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  p {
+    width: calc(100% - 317px);
+    margin: 0;
+    font-size: 18px;
+  }
   &:hover {
     color: rgba(34, 34, 34, .7);
     box-shadow: 0 0 8px 0 rgba(0, 0, 0, .15);
+    border-radius: 5px;
   }
 }
 .p-contents_nav_nome {
@@ -69,30 +104,6 @@ section {
   &:hover {
     box-shadow: 0 0 8px 0 rgba(0, 0, 0, .15);
     background-color: rgba(77, 191, 128, .9);
-  }
-}
-
-.p-contents_area {
-  width: unquote("min(94%, 1000px)");
-  margin: 0 auto 70px;
-  box-shadow: 0 0 8px 0 rgba(0, 0, 0, .15);
-  border-radius: 5px;
-  background-color: #fff;
-  box-sizing: border-box;
-  &.about {
-    padding: 4%;
-    text-align: left;
-  }
-  &.work {
-    width: unquote("min(48%, 480px)");
-    margin: 0;
-    padding: 20px;
-    @media screen and (max-width: 414px) {
-      width:100%;
-      &+.work {
-        margin-top: 20px;
-      }
-    }
   }
 }
 
