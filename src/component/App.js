@@ -11,10 +11,10 @@ function App() {
     <BrowserRouter>
       <ScrollToTop/>
       <Switch>
-        <Route exact path="/" component={home} />
-        <Route exact path="/about" component={about} />
-        <Route exact path="/skills" component={skills} />
-        <Route exact path="/works" component={works} />
+        <Route exact path="/portfolio-react/" component={home} />
+        <Route exact path="/portfolio-react/about" component={about} />
+        <Route exact path="/portfolio-react/skills" component={skills} />
+        <Route exact path="/portfolio-react/works" component={works} />
       </Switch>
     </BrowserRouter>
   );

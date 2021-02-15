@@ -8,14 +8,14 @@ class About extends React.Component {
     render() {
         return (
             <article>
-                <h1 className="p-title"><Link to={`/`}>Portfolio</Link></h1>
+                <h1 className="p-title"><Link to={`/portfolio-react/`}>Portfolio</Link></h1>
                 <section>
                     <h2 className="p-sub_title">ABOUT</h2>
                     <div className="l-contents_area about c-contents_area">
                         <div>
                             <p className="about_title">愛媛大学農学部 生物資源学科</p>
-                            <p className="about_description">動物細胞工学研究室で食品免疫学について研究。
-                            <span className="about_note_title">関連論文：</span>
+                            <p className="about_description">動物細胞工学研究室で食品免疫学について研究する。国際会議で研究内容の発表をするなど積極的に研究に取り組む。
+                            <span className="about_note_title">関連論文(名前は旧姓です)：</span>
                             <span className="about_note">1) Ishida, M., Nishi, K., <span>Kunihiro, N.</span>, Onda, H., Nishimoto, S., & Sugahara, T. (2017). Immunostimulatory effect of aqueous extract of Coriandrum sativum L. seed on macrophages. Journal of the Science of Food and Agriculture, 97(14), 4727-4736.
                             <br/>2) Ishida, M., Nishi, K., Shinohara, K., <span>Kunihiro, N.</span>, Osajima, K., Suemitsu, T., & Sugahara, T. (2017). Immunostimulatory effect of dried bonito extract on mouse macrophage cell lines and mouse primary peritoneal macrophages. Cytotechnology, 69(2), 229-244.</span></p>
                         </div>
@@ -32,19 +32,19 @@ class About extends React.Component {
                     </div>
                     <ul className="p-contents_nav">
                         <li>
-                            <Link to={`/skills`} className="p-contents_nav_link">
-                                <img src={skill} width="150" alt="skills"/>
+                            <Link to={`/portfolio-react/skills`} className="p-contents_nav_link">
+                                <img src={skill} width="150" height="150" alt="skills"/>
                                 <p>SKILLS<br/>強み・スキルを見る</p>
                             </Link>
                         </li>
                         <li>
-                            <Link to={`/works`} className="p-contents_nav_link">
-                                <img src={work} width="150" alt="works"/>
+                            <Link to={`/portfolio-react/works`} className="p-contents_nav_link">
+                                <img src={work} width="150" height="150" alt="works"/>
                                 <p>WORKS<br/>制作物を見る</p>
                             </Link>
                         </li>
                     </ul>
-                    <Link to={`/`} className="p-contents_nav_nome">HOME</Link>
+                    <Link to={`/portfolio-react/`} className="p-contents_nav_nome">HOME</Link>
                 </section>
             </article>
         );

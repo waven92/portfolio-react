@@ -16,6 +16,7 @@
     width: unquote("min(48%, 480px)");
     margin: 0;
     padding: 20px;
+    text-align: left;
     @media screen and (max-width: 414px) {
       width:100%;
       &+.work {
@@ -74,15 +75,17 @@ section {
   color: rgb(34, 34, 34);
   transition: all .1s linear;
   background-color: #fff;
-  border-radius: 90px;
+  border-radius: 5px;
   font-weight: bold;
   display: flex;
   align-items: center;
   justify-content: center;
   p {
-    width: calc(100% - 317px);
     margin: 0;
     font-size: 18px;
+    @media screen and (min-width: 415px){
+      width: calc(100% - 317px);
+    }
   }
   &:hover {
     color: rgba(34, 34, 34, .7);
@@ -173,12 +176,15 @@ hr {
 // 強み
 .strong_point {
   text-align: left;
-  width: unquote("min(90%,800px)");
+  width: unquote("min(90%,810px)");
   margin: auto;
   line-height: 1.7;
-  padding: 10px 0 30px 20px;
+  padding: 10px 0 40px 20px;
   li+li {
     margin-top: 7px;
+  }
+  @media screen and (max-width: 530px) {
+    font-size: 15px;
   }
 }
 
@@ -191,10 +197,19 @@ hr {
   justify-content: space-between;
   flex-wrap: wrap;
 }
-.work_title {
+.p-work_title {
   text-align: left;
   font-weight: bold;
 }
-.work_description {
-  text-align: left;
+.p-work_img {
+  width: 80%;
+  height: auto;
+  border: solid 1px rgba(0, 0, 0, .15);
+  margin: auto;
+  display: block;
+}
+.p-work_github {
+  text-decoration: none;
+  color: #000;
+  font-size: 13px;
 }
