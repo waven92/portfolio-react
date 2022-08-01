@@ -42,7 +42,6 @@ article {
   top: 0;
   right: 0;
   left: 0;
-  text-align: center;
   a {
     color: #fff;
     font-size: 28px;
@@ -112,17 +111,18 @@ section {
 
 // home
 .home_description {
-  margin: 60px 0 40px;
+  margin: 60px auto 40px;
+  width: 1000px;
 }
 
 // about
 .about_title {
-  font-weight: bold;
-  font-size: 19px;
+  font-size: 16px;
   margin: 0 0 7px;
 }
 .about_description {
   margin: 0;
+  font-size: 14px;
 }
 .about_note {
   overflow-x: auto;
@@ -143,7 +143,38 @@ hr {
   border-top: 1px solid #eee;
   border-width: 1px 0 0 0;
 }
-
+// 矢印
+.p-about_content {
+  display: flex;
+  &__arrow_wrap {
+    position: relative;
+    width: 100px;
+  }
+  &__arrow {
+    width: 4px;
+    height: 200px;
+    background-color: #000;
+    position: absolute;
+  }
+  &__arrow_point {
+    display: block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #000;
+    position: absolute;
+    left: -8px;
+    &.point1 {
+      top: 20px;
+    }
+    &.point2 {
+      top: 50px;
+    }
+    &.point3 {
+      top: 200px;
+    }
+  }
+}
  // skill
 .skill_title {
   margin: 0;

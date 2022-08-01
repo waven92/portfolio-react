@@ -10,7 +10,7 @@ class home extends React.Component {
             <article>
                 <h1 className="p-title"><Link to={`/portfolio-react/`}>Portfolio</Link></h1>
                 <section>
-                    <p className="home_description">フロントエンドの開発をしています。</p>
+                    <p className="home_description">ポートフォリオをご覧いただきありがとうございます。ReactでのSPA開発に挑戦するために作成しました。UIはできるだけシンプルにすることで、使いやすくすることを意識しました。</p>
                     <ul className="p-contents_nav">
                         <li>
                             <Link to={`/portfolio-react/about`} className="p-contents_nav_link">

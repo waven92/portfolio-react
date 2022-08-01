@@ -39,7 +39,7 @@ class Skills extends React.Component {
                         <ul className="skill_list">
                             <li>
                                 <img src={icon_html5} width="100" alt="html5"/>
-                                <p>HTML</p>
+                                <p>HTML5</p>
                                 <p className="skill_detail">セマンティックにマークアップすることができます。</p>
                             </li>
                             <li>
