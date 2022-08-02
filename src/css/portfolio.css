@@ -12,11 +12,6 @@
           box-sizing: border-box;
 }
 
-.l-contents_area.about {
-  padding: 4%;
-  text-align: left;
-}
-
 .l-contents_area.work {
   width: min(48%, 480px);
   margin: 0;
@@ -142,17 +137,30 @@ section {
   width: 1000px;
 }
 
-.about_title {
-  font-size: 16px;
-  margin: 0 0 7px;
+.p-about {
+  padding: 4%;
+  text-align: left;
+  font-size: 15px;
 }
 
-.about_description {
+.p-about__date {
+  margin: 0;
+  font-size: 16px;
+  position: absolute;
+}
+
+.p-about__title {
+  font-size: 16px;
+  margin: 0 0 7px;
+  padding-left: 130px;
+}
+
+.p-about__description {
   margin: 0;
   font-size: 14px;
 }
 
-.about_note {
+.p-about__note {
   overflow-x: auto;
   white-space: nowrap;
   margin: 0;
@@ -160,59 +168,44 @@ section {
   display: block;
 }
 
-.about_note span {
+.p-about__note span {
   text-decoration: underline;
 }
 
-.about_note_title {
+.p-about__note_title {
   font-size: 14px;
   display: block;
 }
 
-hr {
-  margin: 35px 0;
+.p-about__more {
+  font-size: 12px;
+  color: #808080;
+  text-align: right;
+  margin: 15px 0 0;
+}
+
+.p-about hr {
+  margin: 15px 0;
   border-top: 1px solid #eee;
   border-width: 1px 0 0 0;
 }
 
-.p-about_content {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.p-about_content__arrow_wrap {
-  position: relative;
-  width: 100px;
-}
-
-.p-about_content__arrow {
-  width: 4px;
-  height: 200px;
-  background-color: #000;
-  position: absolute;
-}
-
-.p-about_content__arrow_point {
-  display: block;
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  background-color: #000;
-  position: absolute;
-  left: -8px;
-}
-
-.p-about_content__arrow_point.point1 {
-  top: 20px;
-}
-
-.p-about_content__arrow_point.point2 {
-  top: 50px;
-}
-
-.p-about_content__arrow_point.point3 {
-  top: 200px;
+@media screen and (min-width: 1000px) {
+  .p-about__content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .p-about__textwrap {
+    width: 760px;
+  }
+  .p-about__date {
+    width: calc(100% - 760px);
+    position: unset;
+  }
+  .p-about__title {
+    padding-left: 0;
+  }
 }
 
 .skill_title {
