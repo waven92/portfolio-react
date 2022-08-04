@@ -15,57 +15,57 @@ class Skills extends React.Component {
         return (
             <article>
                 <h1 className="p-title"><Link to={`/portfolio-react/`}>Portfolio</Link></h1>
-                <section>
+                <section className="p-skill">
                     <h2 className="p-sub_title">SKILLS</h2>
                     <div className="l-contents_area c-contents_area">
-                        <p className="skill_title">強み</p>
-                        <ul className="strong_point">
+                        <p className="p-skill__title">強み・活かせる経験</p>
+                        <ul className="p-skill__strong_point">
                             <li>
-                                細かい作業が得意で、デザインそっくりにコーディングすることができます。
+                                パフォーマンスやセキュリティを意識したコーディングができます。
                             </li>
                             <li>
-                                メンテナンス性やパフォーマンスを意識したコーディングができます。
+                                FLOCSSの設計思想を理解し、保守性の高いCSS設計ができます。
                             </li>
                             <li>
                                 サーバーサイドの開発経験がありサーバーサイドエンジニアと円滑にコミュニケーションを取ることができます。
                             </li>
                             <li>
-                                観察力がありレビュー中に細かいコーディングミスを見つけることができます。(よく褒められます)
+                                アジャイル開発経験があります。
                             </li>
                         </ul>
                     </div>
                     <div className="l-contents_area c-contents_area">
-                        <p className="skill_title">これまでに身に着けたスキル</p>
-                        <ul className="skill_list">
+                        <p className="p-skill__title">これまでに身に着けたスキル</p>
+                        <ul className="p-skill__list">
                             <li>
-                                <img src={icon_html5} width="100" alt="html5"/>
+                                <img src={icon_html5} width="80" alt="html5"/>
                                 <p>HTML5</p>
-                                <p className="skill_detail">セマンティックにマークアップすることができます。</p>
+                                <p className="p-skill__detail">セマンティックにマークアップすることができます。</p>
                             </li>
                             <li>
-                                <img src={icon_css3} width="100" alt="css3"/>
-                                <p>CSS, Sass</p>
-                                <p className="skill_detail">パフォーマンスの観点から、簡単なアイコンや動きなどは可能な限りCSSでコーディングするようにしています。またFLOCSSを理解しメンテナンス性の高いコーディングができます。</p>
+                                <img src={icon_css3} width="80" alt="css3"/>
+                                <p>CSS3, Sass</p>
+                                <p className="p-skill__detail">FLOCSSの設計思想を理解し、保守性の高いCSS設計ができます。</p>
                             </li>
                             <li>
-                                <img src={icon_javascript} width="100" alt="javascript"/>
+                                <img src={icon_javascript} width="80" alt="javascript"/>
                                 <p>JavaScript</p>
-                                <p className="skill_detail">イベント処理やAPI通信などのコーディングができます。最近はReactを学習中です。</p>
+                                <p className="p-skill__detail">イベント処理やAPI通信などのコーディングができます。Reactを学習中です。</p>
                             </li>
                             <li>
-                                <img src={icon_java} width="100" alt="java"/>
+                                <img src={icon_java} width="80" alt="java"/>
                                 <p>Java</p>
-                                <p className="skill_detail">前職では金融系iOSアプリ(swift + Java)のサーバーサイドを担当し、API開発などをしていました。</p>
+                                <p className="p-skill__detail">前職ではJavaを基本言語としたシステム開発の経験があります。</p>
                             </li>
                             <li>
-                                <img src={icon_googlebot} width="100" alt="googlebot"/>
-                                <p>SEO</p>
-                                <p className="skill_detail">構造化データの埋め込み、MFI対応、クローラビリティの改善などを行い、サイトのSEO評価を上げることでサイト流入数を増加させる取り組みをしていました。</p>
+                                <img src={icon_googlebot} width="80" alt="googlebot"/>
+                                <p>SEO対策</p>
+                                <p className="p-skill__detail">構造化データの埋め込み、MFI対応、クローラビリティの改善などを行い自社サイトの流入数を前年比123%にしました。</p>
                             </li>
                             <li>
-                                <img src={icon_other} width="100" alt="その他"/>
+                                <img src={icon_other} width="80" alt="その他"/>
                                 <p>資格</p>
-                                <p className="skill_detail">基本情報技術者<br/>Oracle Certified Java Programmer, Silver SE 8 認定資格</p>
+                                <p className="p-skill__detail">基本情報技術者<br/>Oracle Certified Java Programmer, Silver SE 8 認定資格</p>
                             </li>
                         </ul>
                     </div>

@@ -111,7 +111,7 @@ section {
   width: 1000px;
 }
 
-// ABOUT
+// about
 .p-about {
   padding: 4%;
   text-align: left;
@@ -173,49 +173,52 @@ section {
   }
 }
  // skill
-.skill_title {
-  margin: 0;
-  font-size: 20px;
-  font-weight: bold;
-  padding-top: 30px;
-}
-.skill_list {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 22px 0;
-  justify-content: center;
-  margin: 0;
-  li {
-    list-style: none;
-    width: calc(100% /3);
+.p-skill {
+  &__title {
+    margin: 0;
+    font-size: 18px;
+    font-weight: bold;
+    padding-top: 30px;
+  }
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 22px 2.5%;
+    justify-content: center;
+    margin: 0;
+
     @media screen and (max-width: 530px) {
-      width: 50%;
+      padding: 22px 18px;
+    }
+
+    li {
+      list-style: none;
+      width: calc(100% /3);
+      @media screen and (max-width: 530px) {
+        width: 50%;
+      }
+    }
+  }
+  &__detail {
+    width: 81%;
+    margin: 0 auto 40px;
+    font-size: 14px;
+    color: rgb(34, 34, 34);
+    text-align: left;
+  }
+  // 強み
+  &__strong_point {
+    text-align: left;
+    width: unquote("min(87%,810px)");
+    margin: auto;
+    line-height: 1.7;
+    padding: 21px 3.5% 40px 9.5%;
+    font-size: 14px;
+    li+li {
+      margin-top: 7px;
     }
   }
 }
-.skill_detail {
-  width: 89%;
-  margin: 0 auto 40px;
-  font-size: 15px;
-  color: rgb(34, 34, 34);
-  text-align: left;
-
-}
-// 強み
-.strong_point {
-  text-align: left;
-  width: unquote("min(90%,810px)");
-  margin: auto;
-  line-height: 1.7;
-  padding: 10px 0 40px 20px;
-  li+li {
-    margin-top: 7px;
-  }
-  @media screen and (max-width: 530px) {
-    font-size: 15px;
-  }
-}
-
 
 // work
 .work_contents_wrap {
