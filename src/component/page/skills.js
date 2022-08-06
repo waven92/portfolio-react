@@ -30,7 +30,7 @@ class Skills extends React.Component {
                                 サーバーサイドの開発経験がありサーバーサイドエンジニアと円滑にコミュニケーションを取ることができます。
                             </li>
                             <li>
-                                アジャイル開発経験があります。
+                                アジャイル開発の経験があります。
                             </li>
                         </ul>
                     </div>
@@ -38,52 +38,52 @@ class Skills extends React.Component {
                         <p className="p-skill__title">これまでに身に着けたスキル</p>
                         <ul className="p-skill__list">
                             <li>
-                                <img src={icon_html5} width="80" alt="html5"/>
+                                <img src={icon_html5} width="80" alt="" loading="lazy"/>
                                 <p>HTML5</p>
                                 <p className="p-skill__detail">セマンティックにマークアップすることができます。</p>
                             </li>
                             <li>
-                                <img src={icon_css3} width="80" alt="css3"/>
+                                <img src={icon_css3} width="80" alt="" loading="lazy"/>
                                 <p>CSS3, Sass</p>
                                 <p className="p-skill__detail">FLOCSSの設計思想を理解し、保守性の高いCSS設計ができます。</p>
                             </li>
                             <li>
-                                <img src={icon_javascript} width="80" alt="javascript"/>
+                                <img src={icon_javascript} width="80" alt="" loading="lazy"/>
                                 <p>JavaScript</p>
-                                <p className="p-skill__detail">イベント処理やAPI通信などのコーディングができます。Reactを学習中です。</p>
+                                <p className="p-skill__detail">パフォーマンスやセキュリティを意識したコーディングができます。</p>
                             </li>
                             <li>
-                                <img src={icon_java} width="80" alt="java"/>
+                                <img src={icon_java} width="80" alt="" loading="lazy"/>
                                 <p>Java</p>
-                                <p className="p-skill__detail">前職ではJavaを基本言語としたシステム開発の経験があります。</p>
+                                <p className="p-skill__detail">Javaを使ったシステム開発の経験があります。</p>
                             </li>
                             <li>
-                                <img src={icon_googlebot} width="80" alt="googlebot"/>
+                                <img src={icon_googlebot} width="80" alt="" loading="lazy"/>
                                 <p>SEO対策</p>
-                                <p className="p-skill__detail">構造化データの埋め込み、MFI対応、クローラビリティの改善などを行い自社サイトの流入数を前年比123%にしました。</p>
+                                <p className="p-skill__detail">構造化データの埋め込みやクローラビリティ改善などのSEO対策で自社サイトの流入数を前年比123%にしました。</p>
                             </li>
                             <li>
-                                <img src={icon_other} width="80" alt="その他"/>
+                                <img src={icon_other} width="80" alt="" loading="lazy"/>
                                 <p>資格</p>
                                 <p className="p-skill__detail">基本情報技術者<br/>Oracle Certified Java Programmer, Silver SE 8 認定資格</p>
                             </li>
                         </ul>
                     </div>
-                    <ul className="p-contents_nav">
+                    <ul className="p-nav">
                         <li>
-                            <Link to={`/portfolio-react/works`} className="p-contents_nav_link">
-                                <img src={work} width="150" height="150" alt="works"/>
+                            <Link to={`/portfolio-react/works`} className="p-nav__link">
+                                <img src={work} width="150" height="150" alt="" loading="lazy"/>
                                 <p>WORKS<br/>制作物を見る</p>
                             </Link>
                         </li>
                         <li>
-                            <Link to={`/portfolio-react/about`} className="p-contents_nav_link">
-                                <img src={about} width="150" height="150" alt="html5"/>
+                            <Link to={`/portfolio-react/about`} className="p-nav__link">
+                                <img src={about} width="150" height="150" alt="" loading="lazy"/>
                                 <p>ABOUT<br/>経歴を見る</p>
                             </Link> 
                         </li>
                     </ul>
-                    <Link to={`/portfolio-react/`} className="p-contents_nav_nome">HOME</Link>
+                    <Link to={`/portfolio-react/`} className="p-nav__home">HOME</Link>
                 </section>
             </article>
         );

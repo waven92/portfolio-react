@@ -12,29 +12,6 @@
           box-sizing: border-box;
 }
 
-.l-contents_area.work {
-  width: min(48%, 480px);
-  margin: 0;
-  padding: 20px;
-  text-align: left;
-}
-
-@media screen and (max-width: 414px) {
-  .l-contents_area.work {
-    width: 100%;
-  }
-  .l-contents_area.work + .work {
-    margin-top: 20px;
-  }
-}
-
-article {
-  min-height: 100vh;
-  background-color: #f9f7f7;
-  text-align: center;
-  font-family: 'Montserrat', sans-serif;
-}
-
 .p-title {
   margin: 0;
   padding: 7px 0;
@@ -59,22 +36,29 @@ article {
   font-size: 25px;
 }
 
+article {
+  min-height: 100vh;
+  background-color: #f9f7f7;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+}
+
 section {
   padding: 52px 0 100px;
 }
 
-.p-contents_nav {
+.p-nav {
   width: min(94%, 500px);
   margin: auto;
   list-style: none;
   padding: 0;
 }
 
-.p-contents_nav li + li {
+.p-nav li + li {
   margin-top: 20px;
 }
 
-.p-contents_nav_link {
+.p-nav__link {
   text-decoration: none;
   line-height: 26px;
   padding: 11px 0;
@@ -95,25 +79,25 @@ section {
           justify-content: center;
 }
 
-.p-contents_nav_link p {
+.p-nav__link p {
   margin: 0;
   font-size: 18px;
 }
 
 @media screen and (min-width: 415px) {
-  .p-contents_nav_link p {
+  .p-nav__link p {
     width: calc(100% - 317px);
   }
 }
 
-.p-contents_nav_link:hover {
+.p-nav__link:hover {
   color: rgba(34, 34, 34, 0.7);
   -webkit-box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.15);
           box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.15);
   border-radius: 5px;
 }
 
-.p-contents_nav_nome {
+.p-nav__home {
   border: 1px solid #4dbf80;
   display: block;
   width: 115px;
@@ -126,21 +110,26 @@ section {
   border-radius: 5px;
 }
 
-.p-contents_nav_nome:hover {
+.p-nav__home:hover {
   -webkit-box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.15);
           box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.15);
   background-color: rgba(77, 191, 128, 0.9);
 }
 
-.home_description {
+.p-home__description {
   margin: 60px auto 40px;
-  width: 1000px;
+  width: min(94%,500px);
+  font-size: 14px;
 }
 
 .p-about {
-  padding: 4%;
+  padding: min(4%,40px);
   text-align: left;
-  font-size: 15px;
+  font-size: 14px;
+}
+
+.p-about__header_text {
+  margin: 0;
 }
 
 .p-about__date {
@@ -157,14 +146,13 @@ section {
 
 .p-about__description {
   margin: 0;
-  font-size: 14px;
 }
 
 .p-about__note {
   overflow-x: auto;
   white-space: nowrap;
   margin: 0;
-  font-size: 13px;
+  font-size: 11px;
   display: block;
 }
 
@@ -173,8 +161,9 @@ section {
 }
 
 .p-about__note_title {
-  font-size: 14px;
+  font-size: 11px;
   display: block;
+  margin-top: 1px;
 }
 
 .p-about__more {
@@ -228,12 +217,6 @@ section {
   margin: 0;
 }
 
-@media screen and (max-width: 530px) {
-  .p-skill__list {
-    padding: 22px 18px;
-  }
-}
-
 .p-skill__list li {
   list-style: none;
   width: calc(100% /3);
@@ -266,12 +249,10 @@ section {
   margin-top: 7px;
 }
 
-.work_contents_wrap {
+.p-work {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: min(94%, 1000px);
-  margin: 0 auto 70px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -279,20 +260,49 @@ section {
       flex-wrap: wrap;
 }
 
-.p-work_title {
+.p-work__contents_area {
+  width: min(48%, 480px);
+  margin: 0;
+  padding: 4%;
   text-align: left;
-  font-weight: bold;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
-.p-work_img {
-  width: 80%;
+@media screen and (max-width: 500px) {
+  .p-work__contents_area {
+    width: 100%;
+  }
+  .p-work__contents_area + .p-work__contents_area {
+    margin-top: 20px;
+  }
+}
+
+.p-work__title {
+  text-align: left;
+  font-weight: bold;
+  margin: 25px 0 10px;
+}
+
+.p-work__img {
+  width: 70%;
   height: auto;
   border: solid 1px rgba(0, 0, 0, 0.15);
   margin: auto;
   display: block;
 }
 
-.p-work_github {
+.p-work__text {
+  font-size: 14px;
+  margin: 0;
+}
+
+.p-work__tech {
+  font-size: 14px;
+  margin: 11px 0 6px;
+}
+
+.p-work__github {
   text-decoration: none;
   color: #000;
   font-size: 13px;
